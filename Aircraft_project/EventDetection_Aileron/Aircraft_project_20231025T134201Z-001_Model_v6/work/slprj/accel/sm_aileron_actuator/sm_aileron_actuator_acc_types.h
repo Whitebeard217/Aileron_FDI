@@ -1,0 +1,6 @@
+#ifndef sm_aileron_actuator_acc_types_h_
+#define sm_aileron_actuator_acc_types_h_
+typedef struct P_findnode_sm_aileron_actuator_T_
+P_findnode_sm_aileron_actuator_T ; typedef struct P_sm_aileron_actuator_T_
+P_sm_aileron_actuator_T ;
+#endif

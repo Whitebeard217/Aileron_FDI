@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MF0 version="1.1" packageUris="http://schema.mathworks.com/mf0/faultinfo_datamodel/R2021a">
+  <faultinfo.FailureModeContainer type="faultinfo.FailureModeContainer" uuid="aaef1194-3908-4565-99a9-e262a51bddd4">
+    <failureModes type="faultinfo.FailureMode" uuid="f0bd366f-c78b-460e-a5a4-0baa2fe3a9b2">
+      <ID>1</ID>
+      <associatedFaults type="faultinfo.SSFault" uuid="40d82c23-b6b3-49f0-b208-7d517a77fa0d"/>
+      <faultSubsystemName>DCMotor_fault</faultSubsystemName>
+      <resyncUUID>00000000-0000-0000-0000-000000000000</resyncUUID>
+    </failureModes>
+    <faultModelName>sm_aileron_actuator_FaultModel</faultModelName>
+    <faultModelUUID>1ed6f17f-ac5a-4a6c-9a02-534ae27d3f88</faultModelUUID>
+  </faultinfo.FailureModeContainer>
+  <faultinfo.FaultContainerSet type="faultinfo.FaultContainerSet" uuid="ead30539-95c8-4174-8cc7-14b403750c95">
+    <conditionals type="faultinfo.conditional.Conditional" uuid="1684ac1c-eded-45f2-bc4f-99086a4eb93c">
+      <condition>x == true</condition>
+      <mustBeLogged>false</mustBeLogged>
+      <name>SampleConditional</name>
+      <resyncRefBlkID></resyncRefBlkID>
+      <resyncUUID>00000000-0000-0000-0000-000000000000</resyncUUID>
+      <symbols type="faultinfo.conditional.ExpressionSymbol" uuid="7932e491-c00f-4282-9276-ed7a60ea3e7c">
+        <expression>true</expression>
+        <name>x</name>
+      </symbols>
+    </conditionals>
+    <faultContainers type="faultinfo.FaultContainer" uuid="617bafaf-3bb8-4ee5-a1d8-b41d57ec5616">
+      <activeFault type="faultinfo.SSFault" uuid="40d82c23-b6b3-49f0-b208-7d517a77fa0d"/>
+      <faultedEntityID>SSSubelement|sm_aileron_actuator:2349:1212|Armature winding</faultedEntityID>
+      <faultedEntityName>sm_aileron_actuator/Actuator/Electric/Leadscrew 3/DC Motor/Armature winding</faultedEntityName>
+      <faults type="faultinfo.SSFault" uuid="40d82c23-b6b3-49f0-b208-7d517a77fa0d">
+        <faultDescription></faultDescription>
+        <faultName>DCMotor_fault</faultName>
+        <resyncUUID>00000000-0000-0000-0000-000000000000</resyncUUID>
+        <triggerOn type="faultinfo.TimedTrigger" uuid="e7421074-81ce-4c43-b66b-e4e2b2b086bc">
+          <startTime>25.0</startTime>
+          <isPersistent>true</isPersistent>
+        </triggerOn>
+      </faults>
+      <isEnabled>false</isEnabled>
+    </faultContainers>
+    <isEnabled>true</isEnabled>
+    <lastUpdatedAt>2024-11-06T11:39:31</lastUpdatedAt>
+    <modelName>sm_aileron_actuator</modelName>
+    <modelUUID>ff9d9b26-736e-412f-9483-baadf0bfd914</modelUUID>
+  </faultinfo.FaultContainerSet>
+</MF0>
